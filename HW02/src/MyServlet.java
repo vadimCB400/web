@@ -8,7 +8,7 @@ import java.io.IOException;
 public class MyServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher view = req.getRequestDispatcher("index.jsp");
+        RequestDispatcher view = req.getRequestDispatcher("/index.jsp");
         view.forward(req, resp);
     }
 
@@ -20,7 +20,7 @@ public class MyServlet extends HttpServlet {
         if(login.equals("vadim") && password.equals("123")){
             resp.sendRedirect("okay.jsp");
         }else{
-            resp.sendRedirect("login");
+            resp.sendRedirect("index.jsp");
         }
     }
 }

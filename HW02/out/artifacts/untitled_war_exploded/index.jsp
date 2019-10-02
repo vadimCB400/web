@@ -11,7 +11,7 @@
     <title>$Title$</title>
   </head>
   <body>
-  <form method="post" action="testing">
+  <form method="POST" action="testing">
   <input type="text" name="login" placeholder="login">
   <br><input type="password" name="password" placeholder="password"></br>
   <input type="submit" value="send">
