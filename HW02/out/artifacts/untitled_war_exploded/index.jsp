@@ -11,9 +11,9 @@
     <title>$Title$</title>
   </head>
   <body>
-  <form method="POST" action="/login">
-  <input type="text" name="login" placeholder="login">
-  <br><input type="password" name="password" placeholder="password"></br>
+  <form method="get" action="testing">
+  <input id="login" type="text" name="login" placeholder="login">
+  <br><input id="password" type="password" name="password" placeholder="password"></br>
   <input type="submit" value="send">
   </form>
   </body>
